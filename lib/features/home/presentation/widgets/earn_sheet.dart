@@ -14,14 +14,17 @@ class EarnSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
     return Padding(
-      padding:           EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
-
+      padding:
+          EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
       child: Container(
         height: 600.h,
         decoration: const BoxDecoration(
-            color: MusicAppColors.black,
-            borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(20), topRight: Radius.circular(20))),
+          color: MusicAppColors.black,
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(20),
+            topRight: Radius.circular(20),
+          ),
+        ),
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         child: SizedBox(
           child: Column(
@@ -63,5 +66,8 @@ class EarnSheet extends StatelessWidget {
   }
 }
 
-
-List<Widget> earnWidgets = [const EarnDetails(), const AddBankAccount(), const AccountAdded()];
+List<Widget> earnWidgets = [
+  const EarnDetails(),
+  const AddBankAccount(),
+  const AccountAdded()
+];

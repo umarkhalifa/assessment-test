@@ -1,4 +1,4 @@
-class Bank{
+class Bank {
   final int? id;
   final String? name;
   final String? code;

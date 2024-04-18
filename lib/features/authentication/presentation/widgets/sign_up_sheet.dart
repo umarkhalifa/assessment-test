@@ -36,13 +36,14 @@ class SignUpSheet extends StatelessWidget {
               Row(
                 children: [
                   Text(
-                    authProvider.authStage ==2?
-                    "Complete Account":"Signup with phone",
+                    authProvider.authStage == 2
+                        ? "Complete Account"
+                        : "Signup with phone",
                     style: textTheme.bodySmall!.copyWith(fontSize: 14),
                   ),
                   const Spacer(),
                   GestureDetector(
-                    onTap: (){
+                    onTap: () {
                       Navigator.pop(context);
                     },
                     child: const Icon(
@@ -71,8 +72,3 @@ class SignUpSheet extends StatelessWidget {
     );
   }
 }
-
-
-
-
-

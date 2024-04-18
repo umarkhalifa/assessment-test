@@ -3,7 +3,9 @@ import 'package:outtappxperience/core/utils/http/exceptions/server_exception.dar
 import 'package:outtappxperience/features/home/data/model/account.dart';
 import 'package:outtappxperience/features/home/data/model/bank.dart';
 
-abstract class BankRepository{
+abstract class BankRepository {
   Future<Either<ServerException, List<Bank>>> getBanks();
-  Future<Either<ServerException, Account>> verifyAccount({required String accountNumber, required String code});
+
+  Future<Either<ServerException, Account>> verifyAccount(
+      {required String accountNumber, required String code});
 }

@@ -4,6 +4,7 @@ import 'package:outtappxperience/core/widgets/button.dart';
 import 'package:outtappxperience/core/widgets/text_field.dart';
 import 'package:outtappxperience/features/authentication/presentation/providers/auth_provider.dart';
 import 'package:provider/provider.dart';
+
 class CompleteAccount extends StatelessWidget {
   const CompleteAccount({super.key});
 

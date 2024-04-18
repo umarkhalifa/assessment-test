@@ -64,8 +64,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                           },
                           child: Text(
                             "Skip",
-                            style: textTheme.bodySmall!.copyWith(fontSize: 14,
-                            fontWeight: FontWeight.w400),
+                            style: textTheme.bodySmall!.copyWith(
+                                fontSize: 14, fontWeight: FontWeight.w400),
                           ),
                         ),
                       ),

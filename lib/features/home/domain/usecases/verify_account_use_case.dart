@@ -6,12 +6,13 @@ import 'package:outtappxperience/features/home/data/model/account.dart';
 import 'package:outtappxperience/features/home/data/repository/bank_repo_impl.dart';
 import 'package:outtappxperience/features/home/domain/repository/bank_repository.dart';
 
-class VerifyAccountUseCase implements UseCase<Map<String,Account>,dynamic>{
+class VerifyAccountUseCase implements UseCase<Map<String, Account>, dynamic> {
   final BankRepository _bankRepository = locator<BankRepositoryImpl>();
 
   @override
-  Future<Either<ServerException, Account>> call(Map<String,dynamic> params) async{
-    return await _bankRepository.verifyAccount(accountNumber: params['number'], code: params['code']);
+  Future<Either<ServerException, Account>> call(
+      Map<String, dynamic> params) async {
+    return await _bankRepository.verifyAccount(
+        accountNumber: params['number'], code: params['code']);
   }
-
 }

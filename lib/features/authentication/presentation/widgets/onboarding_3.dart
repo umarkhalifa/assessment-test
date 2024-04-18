@@ -62,14 +62,13 @@ class OnBoarding3 extends StatelessWidget {
                 builder: (context) => const SignUpSheet(),
                 isScrollControlled: true,
                 isDismissible: true,
-              shape: const RoundedRectangleBorder(
-                borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(20),
-                    topLeft: Radius.circular(20)
-                ),
-              )
-            ).whenComplete(() {
-              Provider.of<AuthenticationProvider>(context,listen: false).reset();
+                shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(20),
+                      topLeft: Radius.circular(20)),
+                )).whenComplete(() {
+              Provider.of<AuthenticationProvider>(context, listen: false)
+                  .reset();
             });
           },
           child: Material(

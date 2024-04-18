@@ -180,10 +180,8 @@ class HomeScreen extends StatelessWidget {
             gapH30,
             gapH10,
             const Padding(
-              padding: EdgeInsets.only(left:10.0),
-              child: Hero(
-                  tag: "chip",
-                  child: ChipCard()),
+              padding: EdgeInsets.only(left: 10.0),
+              child: Hero(tag: "chip", child: ChipCard()),
             )
           ],
         ),

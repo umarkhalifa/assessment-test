@@ -4,6 +4,7 @@ import 'package:outtappxperience/app/app.dart';
 import 'package:outtappxperience/config/theme/app_theme/music_colors.dart';
 import 'package:outtappxperience/core/utils/enums/routes.dart';
 import 'package:outtappxperience/core/utils/extension/route.dart';
+
 class MusicDetailCard extends StatelessWidget {
   final String image;
   final String label;

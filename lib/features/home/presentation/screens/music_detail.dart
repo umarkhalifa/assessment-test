@@ -16,7 +16,8 @@ class MusicDetailScreen extends StatefulWidget {
   State<MusicDetailScreen> createState() => _MusicDetailScreenState();
 }
 
-class _MusicDetailScreenState extends State<MusicDetailScreen>with TickerProviderStateMixin {
+class _MusicDetailScreenState extends State<MusicDetailScreen>
+    with TickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _widthAnimation;
 
@@ -36,6 +37,7 @@ class _MusicDetailScreenState extends State<MusicDetailScreen>with TickerProvide
     // Start the animation when the widget is built
     _controller.forward();
   }
+
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
@@ -74,9 +76,7 @@ class _MusicDetailScreenState extends State<MusicDetailScreen>with TickerProvide
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Spacer(),
-            const Hero(
-                tag: "chip",
-                child: ChipCard()),
+            const Hero(tag: "chip", child: ChipCard()),
             gapH15,
             Image.asset(
               MusicAppImages.sarz3,
@@ -106,12 +106,9 @@ class _MusicDetailScreenState extends State<MusicDetailScreen>with TickerProvide
                               bottomLeft: Radius.circular(20),
                             ),
                           ),
-
                         );
                       },
                     ),
-
-
                   ],
                 ),
               ),
@@ -136,7 +133,7 @@ class _MusicDetailScreenState extends State<MusicDetailScreen>with TickerProvide
               ),
             ),
             gapH30,
-             Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Icon(
@@ -171,4 +168,3 @@ class _MusicDetailScreenState extends State<MusicDetailScreen>with TickerProvide
     );
   }
 }
-

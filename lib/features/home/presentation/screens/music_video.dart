@@ -218,4 +218,3 @@ class _MusicVideoState extends State<MusicVideo> with TickerProviderStateMixin {
     );
   }
 }
-

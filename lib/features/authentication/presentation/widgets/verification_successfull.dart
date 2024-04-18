@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:outtappxperience/core/constants/images.dart';
 import 'package:outtappxperience/features/authentication/presentation/providers/auth_provider.dart';
 import 'package:provider/provider.dart';
+
 class VerificationSuccessful extends StatefulWidget {
   const VerificationSuccessful({super.key});
 

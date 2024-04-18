@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:outtappxperience/config/theme/app_theme/music_colors.dart';
 import 'package:outtappxperience/core/constants/images.dart';
 import 'package:outtappxperience/core/constants/spacing.dart';
+import 'package:outtappxperience/core/enum/app_state.dart';
 import 'package:outtappxperience/core/widgets/button.dart';
 import 'package:outtappxperience/features/home/presentation/providers/payment_provider.dart';
 import 'package:provider/provider.dart';

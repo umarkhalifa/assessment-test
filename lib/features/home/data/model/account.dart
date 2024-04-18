@@ -1,11 +1,9 @@
-class Account{
+class Account {
   final String? accountNumber;
   final String? accountName;
   final int? bankId;
 
-  Account({
-    this.accountNumber, this.accountName, this.bankId
-});
+  Account({this.accountNumber, this.accountName, this.bankId});
 
   Map<String, dynamic> toMap() {
     return {

@@ -1,4 +1,3 @@
-
 import 'dart:developer';
 
 import 'package:dartz/dartz.dart';
@@ -12,14 +11,13 @@ import 'package:outtappxperience/features/home/domain/repository/bank_repository
 class BankRepositoryImpl implements BankRepository {
   final BankDataSource bankDataSource = locator<BankDataSource>();
 
-
   @override
   Future<Either<ServerException, List<Bank>>> getBanks() async {
     final data = await bankDataSource.getBanks();
     return data.fold((l) => Left(l), (r) {
       log(r.toString());
       List<Bank> banks = [];
-      for(var element in r['data']){
+      for (var element in r['data']) {
         banks.add(Bank.fromMap(element));
       }
       return Right(banks);
@@ -27,8 +25,10 @@ class BankRepositoryImpl implements BankRepository {
   }
 
   @override
-  Future<Either<ServerException, Account>> verifyAccount({required String accountNumber, required String code}) async{
-    final data = await bankDataSource.verifyAccount(accountNumber: accountNumber, code: code);
+  Future<Either<ServerException, Account>> verifyAccount(
+      {required String accountNumber, required String code}) async {
+    final data = await bankDataSource.verifyAccount(
+        accountNumber: accountNumber, code: code);
     return data.fold((l) => Left(l), (r) {
       log(r.toString());
       return Right(Account.fromMap(r['data']));

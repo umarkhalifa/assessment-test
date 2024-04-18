@@ -8,6 +8,7 @@ import 'package:outtappxperience/core/constants/spacing.dart';
 import 'package:outtappxperience/core/widgets/button.dart';
 import 'package:outtappxperience/features/authentication/presentation/providers/auth_provider.dart';
 import 'package:provider/provider.dart';
+
 class VerificationCode extends StatelessWidget {
   const VerificationCode({super.key});
 

@@ -18,7 +18,10 @@ class AccountAdded extends StatelessWidget {
         const Spacer(),
         Hero(
             tag: 'Verified',
-            child: Image.asset(MusicAppImages.verified,height: 71,)),
+            child: Image.asset(
+              MusicAppImages.verified,
+              height: 71,
+            )),
         gapH20,
         Text(
           "Account added",
@@ -47,9 +50,10 @@ class AccountAdded extends StatelessWidget {
                   Row(
                     children: [
                       Expanded(
-                        child: Text(value.account?.accountNumber ?? '',
-                          style: textTheme.bodySmall!
-                              .copyWith(fontSize: 12, color: MusicAppColors.white),
+                        child: Text(
+                          value.account?.accountNumber ?? '',
+                          style: textTheme.bodySmall!.copyWith(
+                              fontSize: 12, color: MusicAppColors.white),
                           overflow: TextOverflow.ellipsis,
                         ),
                       ),
@@ -61,15 +65,18 @@ class AccountAdded extends StatelessWidget {
                                       element.id == value.account?.bankId)
                                   .first
                                   .name ??
-                              '',style: textTheme.bodySmall!
-                            .copyWith(fontSize: 12, color: MusicAppColors.white,
-                          overflow: TextOverflow.ellipsis,
-
-                        ),
+                              '',
+                          style: textTheme.bodySmall!.copyWith(
+                            fontSize: 12,
+                            color: MusicAppColors.white,
+                            overflow: TextOverflow.ellipsis,
+                          ),
                         ),
                       ),
-                      Image.asset(MusicAppImages.verified,height: 11,),
-
+                      Image.asset(
+                        MusicAppImages.verified,
+                        height: 11,
+                      ),
                     ],
                   )
                 ],
@@ -79,7 +86,6 @@ class AccountAdded extends StatelessWidget {
         ),
         const Spacer(),
         const Spacer(),
-
       ],
     );
   }
